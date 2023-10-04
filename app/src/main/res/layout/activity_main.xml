@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Judul Aplikasi -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metric Converter"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <!-- Nama Pembuat -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vicky Rolando Langi"
+        android:textSize="12sp"
+        android:textColor="#808080"/>
+
+    <!-- Menu Dropdown Pertama - Pilih Metrik -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Metric"/>
+
+    <Spinner
+        android:id="@+id/spinnerMetric"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Menu Dropdown Kedua - Pilih Satuan Sumber -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konversi Dari:"/>
+
+    <Spinner
+        android:id="@+id/spinnerSourceUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:enabled="false"/>
+
+    <!-- Teks "Ke:" dan Menu Dropdown Ketiga - Pilih Satuan Target -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konversi Ke:"/>
+
+    <Spinner
+        android:id="@+id/spinnerTargetUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:enabled="false"/>
+
+    <!-- Kotak Input -->
+    <EditText
+        android:id="@+id/editTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan nilai"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Tombol Konversi -->
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konversi"
+        android:layout_gravity="center"/>
+
+    <!-- Hasil Konversi -->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+</LinearLayout>

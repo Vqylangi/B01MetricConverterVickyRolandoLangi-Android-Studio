@@ -1,0 +1,32 @@
+<resources>
+    <string-array name="metrics_array">
+        <item>PILIH METRIC</item>
+        <item>Length</item>
+        <item>Mass</item>
+        <item>Temperature</item>
+        <item>Time</item>
+    </string-array>
+
+    <string-array name="length_units">
+        <item>km</item>
+        <item>m</item>
+        <item>mm</item>
+    </string-array>
+
+    <string-array name="mass_units">
+        <item>kg</item>
+        <item>g</item>
+        <item>mg</item>
+    </string-array>
+
+    <string-array name="temperature_units">
+        <item>c</item>
+        <item>f</item>
+    </string-array>
+
+    <string-array name="time_units">
+        <item>s</item>
+        <item>min</item>
+        <item>h</item>
+    </string-array>
+</resources>
